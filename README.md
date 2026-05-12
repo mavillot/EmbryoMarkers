@@ -16,6 +16,21 @@ Interactive dashboard to upload embryo **images** or **timelapse videos** and ex
 
 ## Quick Start
 
+### 0) Download the repository
+
+Option A: clone with git
+
+```bash
+git clone https://github.com/mavillot/EmbryoMarkers.git
+cd EmbryoMarkers
+```
+
+Option B: download as ZIP
+
+1. Open https://github.com/mavillot/EmbryoMarkers
+2. Click `Code` then `Download ZIP`
+3. Unzip it and open a terminal in the extracted folder
+
 ### 1) Install dependencies
 
 From the repository root:
