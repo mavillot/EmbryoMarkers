@@ -16,7 +16,7 @@ Interactive dashboard to upload embryo **images** or **timelapse videos** and ex
 
 ## Quick Start
 
-### 0) Download the repository
+### 1) Download the repository
 
 Option A: clone with git
 
@@ -31,7 +31,7 @@ Option B: download as ZIP
 2. Click `Code` then `Download ZIP`
 3. Unzip it and open a terminal in the extracted folder
 
-### 1) Install dependencies
+### 2) Install dependencies
 
 From the repository root:
 
@@ -39,7 +39,7 @@ From the repository root:
 python3 -m pip install -r requirements.txt
 ```
 
-### 2) Download models
+### 3) Download models
 
 Create a folder called `models/` in the repo root (next to `dashboard/` and `inference/`).
 
@@ -77,7 +77,7 @@ models/
   stage_classif.pth
 ```
 
-### 3) Run the dashboard
+### 4) Run the dashboard
 
 ```bash
 python3 -m streamlit run dashboard/app.py
