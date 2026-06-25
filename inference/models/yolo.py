@@ -14,8 +14,8 @@ from pathlib import Path
 FILE = Path(__file__).resolve()
 sys.path.append(FILE.parents[1].as_posix())  # add yolov5/ to path
 
-from aux.common import *
-from aux.experimental import *
+from models.common import *
+from models.experimental import *
 from utils.autoanchor import check_anchor_order
 from utils.general import check_yaml, make_divisible, set_logging
 from utils.plots import feature_visualization
