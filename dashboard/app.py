@@ -6,6 +6,8 @@ import io
 
 import streamlit as st
 
+from typing import List, Tuple
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -227,7 +229,7 @@ def _render_structure_composition_pie(te: float, icm: float, bc: float) -> None:
     st.altair_chart((pie + names + labels).properties(height=420), use_container_width=True)
 
 
-def _render_line_chart(df, x_col: str, y_cols: list[str], *, height: int = 220) -> None:
+def _render_line_chart(df, x_col: str, y_cols: List[str], *, height: int = 220) -> None:
     """Altair line chart with fixed colors; fallback to st.line_chart."""
     pd = importlib.import_module("pandas")
     if not y_cols:
@@ -290,7 +292,7 @@ def _overlay_from_masks(img_rgb, zp, te, icm):
     # Colors consistent with the HTML mock.
     out = img_rgb.copy()
 
-    def paint(mask, color: tuple[int, int, int], alpha: float) -> None:
+    def paint(mask, color: Tuple[int, int, int], alpha: float) -> None:
         if mask is None:
             return
         m = mask > 0

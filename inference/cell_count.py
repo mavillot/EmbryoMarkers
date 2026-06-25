@@ -26,7 +26,7 @@ detect = sys.modules[__name__]
 FILE = Path(__file__).resolve()
 sys.path.append(FILE.parents[0].as_posix())
 
-from models.experimental import attempt_load
+from aux.experimental import attempt_load
 from utils.datasets import LoadStreams, LoadImages
 from utils.general import check_img_size, check_imshow, check_suffix, colorstr, is_ascii, \
     non_max_suppression, apply_classifier, scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path, \

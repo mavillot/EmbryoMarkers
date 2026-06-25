@@ -64,6 +64,18 @@ Download the released model files and save them into `models/` with the exact fi
 - `models/ICM.pt`
   - https://github.com/mavillot/EmbryoMarkers/releases/download/ICM/ICM.pt
 
+You can also download them with Python (one command per file):
+
+```bash
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/stage_classification/stage_classif.pth', 'models/stage_classif.pth')"
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/fragmentation/fragmentation_hrnet.pth', 'models/fragmentation_hrnet.pth')"
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/exp/EXP.pt', 'models/EXP.pt')"
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/cell_count/cell_count.pt', 'models/cell_count.pt')"
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/blasto_structure/segmentation_hrnet.pth', 'models/segmentation_hrnet.pth')"
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/TE/TE.pt', 'models/TE.pt')"
+python3 -c "import urllib.request, pathlib; pathlib.Path('models').mkdir(parents=True, exist_ok=True); urllib.request.urlretrieve('https://github.com/mavillot/EmbryoMarkers/releases/download/ICM/ICM.pt', 'models/ICM.pt')"
+```
+
 After downloading, your `models/` folder should look like:
 
 ```text
